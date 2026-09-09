@@ -1,59 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
   <defs>
     <linearGradient id="pgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#12294A" />
-      <stop offset="50%" stop-color="#1B3A5F" />
-      <stop offset="100%" stop-color="#0A1A2F" />
+      <stop offset="0%" stop-color="#10333A" />
+      <stop offset="50%" stop-color="#16454C" />
+      <stop offset="100%" stop-color="#0B2027" />
     </linearGradient>
     <radialGradient id="pglow" cx="50%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#3E6D9C" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#0A1A2F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2E7D74" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0B2027" stop-opacity="0"/>
     </radialGradient>
     <pattern id="archGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#C9D6E3" stroke-width="0.5" stroke-opacity="0.12" />
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#8FB3AE" stroke-width="0.5" stroke-opacity="0.12" />
     </pattern>
   </defs>
   <rect width="600" height="700" rx="16" fill="url(#pgrad)" />
   <rect width="600" height="700" rx="16" fill="url(#pglow)" />
   <rect width="600" height="700" rx="16" fill="url(#archGrid)" />
   
-  <!-- Architectural framing lines -->
-  <rect x="24" y="24" width="552" height="652" rx="12" fill="none" stroke="#3E6D9C" stroke-width="1.5" stroke-dasharray="8 6" stroke-opacity="0.5" />
+  <!-- Architectural framing lines in soft sage -->
+  <rect x="24" y="24" width="552" height="652" rx="12" fill="none" stroke="#2E7D74" stroke-width="1.5" stroke-dasharray="8 6" stroke-opacity="0.55" />
   
   <!-- Stylized architect figure silhouette / portrait composition -->
-  <circle cx="300" cy="240" r="110" fill="#12294A" stroke="#3E6D9C" stroke-width="2.5" />
-  <circle cx="300" cy="205" r="70" fill="#1B3A5F" stroke="#C9D6E3" stroke-width="1.5" />
+  <circle cx="300" cy="240" r="110" fill="#10333A" stroke="#2E7D74" stroke-width="2.5" />
+  <circle cx="300" cy="205" r="70" fill="#16454C" stroke="#8FB3AE" stroke-width="1.5" />
   
   <!-- Glasses / Minimalist face line -->
-  <rect x="260" y="195" width="32" height="18" rx="3" fill="none" stroke="#C9D6E3" stroke-width="2" />
-  <rect x="308" y="195" width="32" height="18" rx="3" fill="none" stroke="#C9D6E3" stroke-width="2" />
-  <line x1="292" y1="204" x2="308" y2="204" stroke="#C9D6E3" stroke-width="2" />
+  <rect x="260" y="195" width="32" height="18" rx="3" fill="none" stroke="#8FB3AE" stroke-width="2" />
+  <rect x="308" y="195" width="32" height="18" rx="3" fill="none" stroke="#8FB3AE" stroke-width="2" />
+  <line x1="292" y1="204" x2="308" y2="204" stroke="#8FB3AE" stroke-width="2" />
   
   <!-- Torso / Jacket -->
-  <path d="M 190 380 C 190 295, 410 295, 410 380 L 420 440 L 180 440 Z" fill="#183254" stroke="#3E6D9C" stroke-width="2"/>
-  <path d="M 265 310 L 300 375 L 335 310" fill="none" stroke="#C9D6E3" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M 190 380 C 190 295, 410 295, 410 380 L 420 440 L 180 440 Z" fill="#143A42" stroke="#2E7D74" stroke-width="2"/>
+  <path d="M 265 310 L 300 375 L 335 310" fill="none" stroke="#8FB3AE" stroke-width="1.5" stroke-opacity="0.75"/>
 
   <!-- Isometric 3D wireframe cube overlay near hands/lower -->
   <g transform="translate(300, 500)">
     <!-- Base cube wireframe -->
-    <path d="M 0,-60 L 70,-20 L 70,50 L 0,90 L -70,50 L -70,-20 Z" fill="#0A1A2F" fill-opacity="0.8" stroke="#C9D6E3" stroke-width="1.5" />
-    <path d="M 0,-60 L 0,90" stroke="#C9D6E3" stroke-width="1.5" />
-    <path d="M 0,15 L 70,-20" stroke="#C9D6E3" stroke-width="1.5" />
-    <path d="M 0,15 L -70,-20" stroke="#C9D6E3" stroke-width="1.5" />
-    <circle cx="0" cy="15" r="4" fill="#3E6D9C" />
-    <circle cx="70" cy="-20" r="3" fill="#C9D6E3" />
-    <circle cx="-70" cy="-20" r="3" fill="#C9D6E3" />
-    <circle cx="0" cy="-60" r="3" fill="#3E6D9C" />
+    <path d="M 0,-60 L 70,-20 L 70,50 L 0,90 L -70,50 L -70,-20 Z" fill="#0B2027" fill-opacity="0.8" stroke="#8FB3AE" stroke-width="1.5" />
+    <path d="M 0,-60 L 0,90" stroke="#8FB3AE" stroke-width="1.5" />
+    <path d="M 0,15 L 70,-20" stroke="#8FB3AE" stroke-width="1.5" />
+    <path d="M 0,15 L -70,-20" stroke="#8FB3AE" stroke-width="1.5" />
+    <circle cx="0" cy="15" r="4" fill="#2E7D74" />
+    <circle cx="70" cy="-20" r="3" fill="#8FB3AE" />
+    <circle cx="-70" cy="-20" r="3" fill="#8FB3AE" />
+    <circle cx="0" cy="-60" r="3" fill="#2E7D74" />
   </g>
 
-  <!-- Drafting scale indicator -->
+  <!-- Drafting scale indicator in sage/teal -->
   <g transform="translate(50, 630)">
-    <line x1="0" y1="0" x2="500" y2="0" stroke="#C9D6E3" stroke-width="1" stroke-opacity="0.3" />
-    <line x1="0" y1="-8" x2="0" y2="8" stroke="#3E6D9C" stroke-width="2" />
-    <line x1="125" y1="-5" x2="125" y2="5" stroke="#C9D6E3" stroke-width="1" />
-    <line x1="250" y1="-8" x2="250" y2="8" stroke="#3E6D9C" stroke-width="2" />
-    <line x1="375" y1="-5" x2="375" y2="5" stroke="#C9D6E3" stroke-width="1" />
-    <line x1="500" y1="-8" x2="500" y2="8" stroke="#3E6D9C" stroke-width="2" />
-    <text x="250" y="24" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#C9D6E3" letter-spacing="3">VINCENT // PRINCIPAL DESIGNER</text>
+    <line x1="0" y1="0" x2="500" y2="0" stroke="#8FB3AE" stroke-width="1" stroke-opacity="0.35" />
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#2E7D74" stroke-width="2" />
+    <line x1="125" y1="-5" x2="125" y2="5" stroke="#8FB3AE" stroke-width="1" />
+    <line x1="250" y1="-8" x2="250" y2="8" stroke="#2E7D74" stroke-width="2" />
+    <line x1="375" y1="-5" x2="375" y2="5" stroke="#8FB3AE" stroke-width="1" />
+    <line x1="500" y1="-8" x2="500" y2="8" stroke="#2E7D74" stroke-width="2" />
+    <text x="250" y="24" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#8FB3AE" letter-spacing="3">VINCENT // PRINCIPAL DESIGNER</text>
   </g>
 </svg>
