@@ -1,376 +1,391 @@
-import { 
-  Project, 
-  ServiceItem, 
-  ComparisonScene, 
+import {
+  Project,
+  ServiceItem,
+  ComparisonScene,
   Testimonial,
-  ArchitecturalConcept 
+  ArchitecturalConcept
 } from '../types';
 
 export const ARCHITECTURAL_CONCEPTS: ArchitecturalConcept[] = [
   {
-    id: 'concept-solstice',
+    id: 'concept-contemporary-cubic',
     optionNumber: 'Option 01',
-    title: 'The Solstice Desert Modern Villa',
-    styleTag: 'Desert Modern & Rammed Earth',
-    tagline: 'Deep solar overhangs, thermal earth walls & oasis courtyard swimming pool',
-    renderImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80',
-    clayImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+    title: 'Contemporary Cubic — Ultra-Modern International',
+    styleTag: 'Ultra-Modern International',
+    tagline: 'Bold geometric volumes, expansive glass planes & crisp rectilinear massing',
+    renderImage: '/images/concepts/contemporary-cubic.jpg',
+    clayImage: '/images/concepts/contemporary-cubic.jpg',
     specs: {
-      totalArea: '4,200 Sq Ft',
+      totalArea: '4,500 Sq Ft',
       layout: '4 Beds / 4.5 Baths',
       estCostPerSqFt: '$380 – $480 / sq ft',
-      idealEnvironment: 'Arid, High Sun & Desert Foothills'
+      idealEnvironment: 'Urban Infill, Hillside & Suburban Premium Lots'
     },
     highlights: [
-      'Cantilevered roof shade overhangs engineered in SketchUp',
-      'Central cooling courtyard pool with shade sail framing',
-      'Solar angle shadow analysis for zero direct summer heat gain',
-      'Floor-to-ceiling recessed pocketing glass sliders'
+      'Cantilevered volumes engineered for dramatic horizontal projection',
+      'Floor-to-ceiling frameless glass curtain wall systems',
+      'Flat or low-pitch roof with integrated drainage detailing',
+      'Precision-modeled reveals and flush surface transitions'
     ],
     materials: [
-      'Stabilized Rammed Earth',
+      'Board-Formed Concrete',
       'Black Powder-Coated Steel',
       'Low-E Thermal Glass',
-      'Bleached Teak Slatting'
+      'Smooth Stucco Panels'
     ],
-    narrative: 'Designed specifically for arid climate landscapes, Concept 1 balances earth-toned monolithic walls with dramatic glass cantilevers. Natural rammed earth walls regulate indoor temperature, while deep roof overhangs shield living areas from high midday summer sun.'
+    narrative: 'Defined by its assertive geometry and premium materiality, this concept delivers the hallmark of contemporary architecture — clean planes, deep cantilevers, and a palette of concrete, steel, and glass that communicates confidence and precision.'
   },
   {
-    id: 'concept-horizon',
+    id: 'concept-modern-ranch',
     optionNumber: 'Option 02',
-    title: 'Horizon Coastal Glass Pavilion',
-    styleTag: 'Pacific Modern Cantilever',
-    tagline: 'Defying coastal bluff topography with floating steel trusses and 270° marine vistas',
-    renderImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80',
-    clayImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80',
+    title: 'Modern Ranch — Contemporary Craftsman',
+    styleTag: 'Contemporary Craftsman',
+    tagline: 'Warm timber detailing, wide sheltering rooflines & natural material palette',
+    renderImage: '/images/concepts/modern-ranch.jpg',
+    clayImage: '/images/concepts/modern-ranch.jpg',
     specs: {
-      totalArea: '5,600 Sq Ft',
-      layout: '5 Beds / 5.5 Baths',
-      estCostPerSqFt: '$450 – $580 / sq ft',
-      idealEnvironment: 'Coastal Bluffs, Marine Climates & Sloping Headlands'
+      totalArea: '3,200 Sq Ft',
+      layout: '3 Beds / 3 Baths',
+      estCostPerSqFt: '$320 – $420 / sq ft',
+      idealEnvironment: 'Rural, Semi-Rural & Suburban Single-Story Lots'
     },
     highlights: [
-      'Suspended 18-foot cantilever deck with glass balustrade',
-      'Aerodynamic wind-deflecting roofline modeled to withstand coastal gusts',
-      'Double-height open living pavilion with submerged fire pit',
-      'Integrated rainwater harvest cistern below podium'
+      'Wide overhanging eaves providing year-round shade and weather protection',
+      'Exposed timber rafter tails and bracket detailing',
+      'Deep wraparound porch with stone column bases',
+      'Open great room with vaulted ceilings and clerestory lighting'
     ],
     materials: [
-      'Marine-Grade Corten Steel',
-      'Charred Accoya Siding',
-      'Board-Formed Concrete',
-      'Acoustic Ceiling Slats'
+      'Douglas Fir Timber Accents',
+      'Natural Fieldstone Veneer',
+      'Standing Seam Metal Roof',
+      'Cedar Board & Batten Siding'
     ],
-    narrative: 'Conceived for steep coastal promontories where views and wind management dictate form. Vincent utilized SketchUp Sandbox tools to model the exact bluff contour, stepping foundations along bedrock while cantilevering the main living wing toward panoramic ocean sunsets.'
+    narrative: 'The Modern Ranch blends the ease of single-story living with elevated contemporary Craftsman details — hand-selected timber brackets, authentic stonework, and welcoming broad porches that anchor the home to its landscape.'
   },
   {
-    id: 'concept-komorebi',
+    id: 'concept-modern-split-level',
     optionNumber: 'Option 03',
-    title: 'Komorebi Nordic Pavilion',
-    styleTag: 'Nordic Black Timber & Glass',
-    tagline: 'Framed forest living with double-height clerestory glass and charred timber envelopes',
-    renderImage: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1600&q=80',
-    clayImage: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1600&q=80',
+    title: 'Modern Split-Level — Transitional',
+    styleTag: 'Transitional Modern',
+    tagline: 'Multi-tier massing that steps with the terrain, blending modern and traditional',
+    renderImage: '/images/concepts/modern-split-level.jpg',
+    clayImage: '/images/concepts/modern-split-level.jpg',
     specs: {
-      totalArea: '3,400 Sq Ft',
-      layout: '3 Beds / 3.5 Baths',
-      estCostPerSqFt: '$350 – $440 / sq ft',
-      idealEnvironment: 'Forest Ridges, Alpine Valleys & Temperate Woodlands'
+      totalArea: '3,800 Sq Ft',
+      layout: '4 Beds / 3.5 Baths',
+      estCostPerSqFt: '$340 – $440 / sq ft',
+      idealEnvironment: 'Sloped Sites, Hillside Neighborhoods & Transitional Suburbs'
     },
     highlights: [
-      'Clerestory windows capturing dappled forest tree canopy light',
-      'Shou Sugi Ban charred wood facade providing natural pest & fire resistance',
-      'Sunken living conversation pit surrounding Scandinavian suspended fireplace',
-      'Triple-glazed thermal envelope with solar heat recovery ventilation'
+      'Split-level floor plan maximizing natural grade changes',
+      'Transitional detailing bridging traditional and contemporary tastes',
+      'Layered roofline with mixed pitch variations',
+      'Integrated garage with refined facade composition'
     ],
     materials: [
-      'Shou Sugi Ban Charred Fir',
-      'Natural Scandinavian Pine',
-      'Honed Basalt Pavers',
-      'Matte Black Zinc Seaming'
+      'Smooth Stucco with Wood Trim',
+      'Composite Shingle Roof',
+      'Aluminum-Clad Windows',
+      'Brick Accent Banding'
     ],
-    narrative: 'Inspired by the Japanese concept of sunlight filtering through leaves (木漏れ日), this home embeds itself quietly into dense woodlands. The blackened exterior recedes into tree shadows, allowing warm interior illumination to glow like an evening lantern.'
+    narrative: 'The Transitional Split-Level capitalizes on challenging sites, turning grade changes into architectural assets. Interior zones step naturally at half-levels, creating spatial variety while maintaining visual connection between living areas.'
   },
   {
-    id: 'concept-monolith',
+    id: 'concept-modern-subdivision',
     optionNumber: 'Option 04',
-    title: 'Monolith Hillside Concrete Residence',
-    styleTag: 'Geometric Board-Formed Concrete',
-    tagline: 'Sculptural brutalist volumes interlocked with native hillside garden pockets',
-    renderImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80',
-    clayImage: 'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1600&q=80',
+    title: 'Modern Subdivision — Contemporary Row Housing',
+    styleTag: 'Contemporary Row Housing',
+    tagline: 'Repeatable modern townhome design with individual identity and shared massing rhythm',
+    renderImage: '/images/concepts/modern-subdivision.jpg',
+    clayImage: '/images/concepts/modern-subdivision.jpg',
     specs: {
-      totalArea: '4,800 Sq Ft',
-      layout: '4 Beds / 5 Baths',
-      estCostPerSqFt: '$420 – $520 / sq ft',
-      idealEnvironment: 'Hillside Terrains, Mountain Foothills & Urban Escarpments'
+      totalArea: '1,800 – 2,400 Sq Ft / Unit',
+      layout: '3 Beds / 2.5 Baths',
+      estCostPerSqFt: '$280 – $380 / sq ft',
+      idealEnvironment: 'Urban Infill, Transit-Oriented & New Subdivision Tracts'
     },
     highlights: [
-      'Interlocking rectilinear volumes with dramatic structural cantilevers',
-      'Board-formed rough timber grain concrete walls providing immense thermal mass',
-      'Multiple private courtyard garden cut-outs bringing cross-ventilation',
-      'Infinity reflection pool cascading into lower terrace lightwell'
+      'Modular unit bays with facade variation per unit for visual diversity',
+      'Rooftop deck potential on each unit for private outdoor living',
+      'Shared underground or tandem garage infrastructure',
+      'Energy-efficient party wall construction minimizing thermal loss'
     ],
     materials: [
-      'Douglas Fir Board-Formed Concrete',
-      'Oxidized Raw Bronze Hardware',
-      'Black Granite Hearth',
-      'Low-Iron Floor-to-Ceiling Glazing'
+      'Fiber Cement Panel Cladding',
+      'Metal Accent Canopies',
+      'Large Fixed Glass Windows',
+      'Painted Concrete Masonry'
     ],
-    narrative: 'A masterclass in geometric permanence. The heavy thermal mass of concrete stabilizes internal temperatures through extreme seasons, while geometric apertures and garden cutouts flood interior living halls with changing shadows throughout the day.'
+    narrative: 'Designed for density without uniformity, this row housing concept gives each unit a distinct address while maintaining a cohesive streetscape rhythm. Repeatable construction logic keeps costs controlled while modern material variation keeps the block lively.'
   },
   {
-    id: 'concept-aura',
+    id: 'concept-spanish-colonial',
     optionNumber: 'Option 05',
-    title: 'Aura Tropical Modern Sanctuary',
-    styleTag: 'Tropical Organic & Teak Louvers',
-    tagline: 'Breathing architecture featuring operable teak screen louvers and water reflection moats',
-    renderImage: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1600&q=80',
-    clayImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80',
+    title: 'Spanish Colonial Revival — Desert Tuscan',
+    styleTag: 'Spanish Colonial & Desert Tuscan',
+    tagline: 'Handcrafted terracotta, shaded arcaded loggias & authentic Mediterranean warmth',
+    renderImage: '/images/concepts/spanish-colonial.jpg',
+    clayImage: '/images/concepts/spanish-colonial.jpg',
     specs: {
-      totalArea: '3,900 Sq Ft',
+      totalArea: '4,200 Sq Ft',
       layout: '4 Beds / 4 Baths',
       estCostPerSqFt: '$360 – $460 / sq ft',
-      idealEnvironment: 'Humid Subtropical, Coastal Islands & Rain-Fed Valleys'
+      idealEnvironment: 'Arid Southwest, Sun Belt & Mediterranean-Climate Regions'
     },
     highlights: [
-      'Motorized pivot teak louvers regulating ocean breezes and sun glare',
-      'Over-water boardwalk entrances flanked by botanical water gardens',
-      'Open-air covered lanai entertaining terraces with outdoor shower gardens',
-      'Deep hip-roof overhangs that shelter walls from monsoonal rain'
+      'Smooth lime plaster exterior in warm sand and terracotta tones',
+      'Reclaimed Spanish clay barrel tile roofing with copper gutters',
+      'Arched arcade loggia creating deep shaded outdoor living',
+      'Interior courtyard with central fountain and drought-tolerant garden'
     ],
     materials: [
-      'Reclaimed Burmese Teak',
-      'Indonesian Sukabumi Stone',
-      'Matte White Lime Stucco',
-      'Perforated Brass Screens'
+      'Hand-Troweled Lime Stucco',
+      'Reclaimed Spanish Clay Tile',
+      'Santa Barbara Sandstone',
+      'Custom Wrought Iron Grilles'
     ],
-    narrative: 'A permeable house that breathes in dialogue with its tropical microclimate. By utilizing tall volume ceilings, operable wood slats, and perimeter water gardens, the residence stays cool without reliance on heavy air conditioning.'
+    narrative: 'Rooted in centuries of Mediterranean building tradition, this concept channels California mission architecture into a modern luxury home — thick walls that stay cool naturally, shaded arcades for outdoor dining, and artisan details that only improve with age.'
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    id: 'ridge-cantilever',
+    id: 'pacific-heights',
     projectCode: 'ARC-2401',
-    title: 'The Ridge Cantilever Residence',
-    subtitle: 'Cantilevered cliffside modern villa with integrated terrace pool',
+    title: 'Pacific Heights Residence',
+    subtitle: 'Multi-angle exterior visualization with clay model and photorealistic final renders',
     category: 'residential',
     categoryLabel: 'Residential Houses',
     year: '2024',
-    location: 'Malibu, California',
-    sqft: '4,800 SQ FT',
+    location: 'Pacific Heights',
+    sqft: '3,600 SQ FT',
     software: ['SketchUp Pro 2025', 'V-Ray 6', 'Photoshop CC'],
     renderEngine: 'V-Ray 6 Photorealistic',
-    coverImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+    coverImage: '/images/exterior/pacific-heights-front-highres.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80'
+      '/images/exterior/pacific-heights-front-highres.jpg',
+      '/images/exterior/pacific-heights-left-highres.jpg',
+      '/images/exterior/pacific-heights-right-highres.jpg',
+      '/images/exterior/pacific-heights-front-clay.jpg',
+      '/images/exterior/pacific-heights-left-clay.jpg',
+      '/images/exterior/pacific-heights-right-clay.jpg',
     ],
-    sketchupImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-    description: 'Suspended over a dramatic Malibu ridge line, this 4,800 sq.ft residence features a 24-foot cantilevered primary suite. Vincent engineered the massing model in Trimble SketchUp Pro to calculate wind deflection and solar angles, before producing the 8K twilight visualization in V-Ray and Photoshop.',
-    architecturalIntent: 'To harmonize an unapologetically modern rectilinear form with the Pacific coastline, framing panoramic ocean horizons while providing secluded private courtyards shielded from salt-spray winds.',
-    toolsUsed: ['Trimble SketchUp Pro', 'V-Ray 6 for SketchUp', 'Adobe Photoshop CC', 'SketchUp LayOut'],
+    sketchupImage: '/images/exterior/pacific-heights-front-clay.jpg',
+    photoshopFinalImage: '/images/exterior/pacific-heights-front-highres.jpg',
+    description: 'A full-angle exterior visualization package for a modern residential home — covering front, left and right elevations in both photorealistic final renders and clay model views. The project demonstrates complete massing control from multiple vantage points.',
+    architecturalIntent: 'To deliver a cohesive exterior language that reads confidently from every approach, with clean proportions, balanced material contrast, and precise shadow depth across all elevations.',
+    toolsUsed: ['Trimble SketchUp Pro', 'V-Ray 6 for SketchUp', 'Adobe Photoshop CC'],
     specs: {
-      area: '4,800 sq. ft.',
-      timeline: '5 Months (Concept to LayOut Set)',
-      style: 'Modern Pacific Cantilever',
-      elevationOrFloors: '2 Stories + Lower Infinity Deck',
+      area: '3,600 sq. ft.',
+      timeline: '4 Weeks (Concept to Final Renders)',
+      style: 'Contemporary Modern Residential',
+      elevationOrFloors: '2 Stories',
       scaleRatio: '1:100 Metric Blueprint'
     },
-    materials: ['Board-Formed White Concrete', 'Charred Accoya Siding', 'Thermally Broken Glass', 'Brushed Bronze Trim'],
+    materials: ['Smooth Stucco', 'Dark Metal Trim', 'Large Format Glazing', 'Composite Roofing'],
     workflowHighlights: [
-      'Engineered contour grading directly with SketchUp Sandbox toolset.',
-      'Calibrated solar angle studies across summer and winter solstice extremes.',
-      'Generated 24-page permitting LayOut construction drawing set with full dimensions.',
-      'Composited multi-layer V-Ray lighting passes into Photoshop with aerial backdrop.'
+      'Three-angle camera setup calibrated in SketchUp for maximum massing clarity.',
+      'Clay render pass isolated geometry and shadow quality before texturing.',
+      'Multi-layer V-Ray lighting composited in Photoshop with contextual landscaping.',
+      'Final renders delivered at print resolution for permitting and client presentation.'
     ],
     featured: true
   },
   {
-    id: 'cascade-timber-villa',
+    id: 'groove-streets-apartments',
     projectCode: 'ARC-2402',
-    title: 'Cascade Timber & Stone Villa',
-    subtitle: 'Heavy timber framing with local fieldstone foundation and green roof',
+    title: 'Groove Streets Apartments',
+    subtitle: 'Multi-family residential development with front and rear elevation renders',
+    category: 'residential',
+    categoryLabel: 'Residential Houses',
+    year: '2024',
+    location: 'Groove Streets',
+    sqft: '24,000 SQ FT',
+    software: ['SketchUp Pro', 'V-Ray 6', 'Photoshop CC'],
+    renderEngine: 'V-Ray 6 Photorealistic',
+    coverImage: '/images/large/groove-streets-front-highres.jpg',
+    galleryImages: [
+      '/images/large/groove-streets-front-highres.jpg',
+      '/images/large/groove-streets-rear-highres.jpg',
+      '/images/large/groove-streets-front-clay.jpg',
+      '/images/large/groove-streets-rear-clay.jpg',
+    ],
+    sketchupImage: '/images/large/groove-streets-front-clay.jpg',
+    photoshopFinalImage: '/images/large/groove-streets-front-highres.jpg',
+    description: 'A multi-family apartment complex rendered from both front street-facing and rear courtyard perspectives. The project included full clay model validation before final photorealistic production, ensuring massing accuracy at a larger residential scale.',
+    architecturalIntent: 'To balance urban density requirements with architectural character — an approachable street presence and a private rear courtyard environment that reduces visual bulk.',
+    toolsUsed: ['SketchUp Pro', 'V-Ray 6', 'Adobe Photoshop CC'],
+    specs: {
+      area: '24,000 sq. ft.',
+      timeline: '6 Weeks Design & Visualization',
+      style: 'Contemporary Urban Multi-Family',
+      elevationOrFloors: '3–4 Stories'
+    },
+    materials: ['Fiber Cement Panels', 'Brick Accent Banding', 'Aluminum Windows', 'Metal Canopies'],
+    workflowHighlights: [
+      'Massing model validated against zoning setback and height envelopes.',
+      'Front and rear elevations rendered to show full project scope.',
+      'Clay renders delivered to client for design review prior to final production.',
+      'Contextual streetscape environment composited in Photoshop post-production.'
+    ],
+    featured: true
+  },
+  {
+    id: 'bozeman-residence',
+    projectCode: 'ARC-2403',
+    title: '693 Clancey — Bozeman Residence',
+    subtitle: 'Dual-view exterior visualization with clay-to-photorealistic workflow',
     category: 'exterior',
     categoryLabel: 'Exterior Visualizations',
     year: '2024',
-    location: 'Seattle, Washington',
-    sqft: '3,600 SQ FT',
-    software: ['SketchUp Pro', 'Enscape 3D', 'Photoshop'],
-    renderEngine: 'Enscape 3D Realtime',
-    coverImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-    galleryImages: [
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80'
-    ],
-    sketchupImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-    description: 'Immersed in the Pacific Northwest evergreen canopy, this villa integrates Douglas fir timber beams with rugged river stone masonry. Vincent created detailed 3D structural component assemblies in SketchUp, allowing the construction team to visualize timber joints prior to milling.',
-    architecturalIntent: 'Connecting the built structure with endemic cedar groves through continuous sightlines, deep sheltered porches, and natural stone fireplaces anchored in the terrain.',
-    toolsUsed: ['SketchUp Pro', 'Enscape 3D', 'Adobe Photoshop CC'],
-    specs: {
-      area: '3,600 sq. ft.',
-      timeline: '3.5 Months Design & 3D Sets',
-      style: 'Pacific Northwest Craftsman Modern',
-      elevationOrFloors: 'Split-Level 2 Floors'
-    },
-    materials: ['Heavy Timber Douglas Fir', 'Split-Face Granite Stone', 'Standing Seam Metal Roof', 'Black Casement Windows'],
-    workflowHighlights: [
-      'Built parametric 3D timber truss joints with exact steel bolt hardware in SketchUp.',
-      'Simulated soft rainy Pacific mist and tree canopy shadows in Photoshop post-production.',
-      'Exported detailed roof pitch & drainage details for framing carpenters.'
-    ],
-    featured: true
-  },
-  {
-    id: 'metro-infill-courtyard',
-    projectCode: 'ARC-2403',
-    title: 'Metropolitan Infill Courtyard House',
-    subtitle: 'Urban privacy sanctuary centering a Japanese maple courtyard and lap pool',
-    category: 'residential',
-    categoryLabel: 'Residential Houses',
-    year: '2023',
-    location: 'Austin, Texas',
-    sqft: '2,950 SQ FT',
-    software: ['SketchUp Pro', 'V-Ray 6', 'LayOut'],
+    location: 'Bozeman, Montana',
+    sqft: '3,200 SQ FT',
+    software: ['SketchUp Pro', 'V-Ray 6', 'Photoshop CC'],
     renderEngine: 'V-Ray 6 Photorealistic',
-    coverImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+    coverImage: '/images/exterior/693-clancey-view1-highres.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'
+      '/images/exterior/693-clancey-view1-highres.jpg',
+      '/images/exterior/693-clancey-view2-highres.jpg',
+      '/images/exterior/693-clancey-view1-clay.jpg',
+      '/images/exterior/693-clancey-view2-clay.jpg',
     ],
-    sketchupImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-    description: 'Designed for a tight urban lot, this home turns inward. A continuous solid perimeter brick facade blocks street noise, while the interior opens entirely into a glass-enclosed central courtyard with water reflections.',
-    architecturalIntent: 'Maximizing perceived space and daylight on a narrow 50-foot city lot through internal transparency and double-height ceiling voids.',
-    toolsUsed: ['SketchUp Pro', 'V-Ray', 'Photoshop CC', 'LayOut 2D'],
+    sketchupImage: '/images/exterior/693-clancey-view1-clay.jpg',
+    photoshopFinalImage: '/images/exterior/693-clancey-view1-highres.jpg',
+    description: 'Two-angle exterior visualization package for a Bozeman, Montana residence set against a mountain backdrop. Each view was delivered as both a clay wireframe for client review and a final photorealistic render with environmental context.',
+    architecturalIntent: 'To frame the home within its dramatic Montana landscape context, using mountainous distant backdrops and native vegetation to anchor the structure to its site.',
+    toolsUsed: ['SketchUp Pro', 'V-Ray 6', 'Adobe Photoshop CC'],
     specs: {
-      area: '2,950 sq. ft.',
-      timeline: '4 Months Permitting & 3D Sets',
-      style: 'Urban Minimalist Infill',
-      elevationOrFloors: '2 Floors with Rooftop Deck'
+      area: '3,200 sq. ft.',
+      timeline: '3 Weeks Modeling & Renders',
+      style: 'Contemporary Mountain Residential',
+      elevationOrFloors: '2 Stories'
     },
-    materials: ['Handmade Roman Grey Brick', 'Floor-to-Ceiling Steel Glass Doors', 'Polished Concrete Slabs', 'Japanese Maple Canopy'],
+    materials: ['Natural Wood Siding', 'Stone Veneer Base', 'Dark Metal Roof', 'Large Fixed Glazing'],
     workflowHighlights: [
-      'Zero-lot line property boundary validation in SketchUp.',
-      'Daylight bounce simulations off courtyard brick surfaces.',
-      'Coordinated full MEP and structural plumbing chases in 3D.'
+      'Site topography modeled in SketchUp Sandbox from survey data.',
+      'Mountain backdrop matte-painted in Photoshop for regional context.',
+      'Clay renders reviewed and approved before final lighting production.',
+      'Two camera angles delivered to cover entry approach and secondary facade.'
     ],
     featured: true
   },
   {
-    id: 'brutalist-minimalist-clay',
-    projectCode: 'ARC-2404',
-    title: 'Brutalist Minimalist Residence',
-    subtitle: 'Pure sculptural massing study focusing on shadow rhythm and monolithic geometry',
-    category: 'clay',
-    categoryLabel: 'SketchUp 3D Clay Models',
-    year: '2024',
-    location: 'Concept Project',
-    sqft: '5,200 SQ FT',
-    software: ['SketchUp Clay Mode', 'Curviloft', 'LayOut'],
-    renderEngine: 'Monochrome SketchUp Clay',
-    coverImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-    galleryImages: [
-      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80'
-    ],
-    sketchupImage: 'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-    description: 'An architectural exploration of raw concrete volumes without decorative cladding. The focus of this SketchUp study is the relationship between heavy mass, razor-sharp edge reveals, and deep sun shadow channels.',
-    architecturalIntent: 'Proving that dramatic architecture comes from volume, proportion, and natural shadow play before any surface finishes are chosen.',
-    toolsUsed: ['SketchUp Pro', 'Curviloft Extension', 'Clay Shading Mode'],
-    specs: {
-      area: '5,200 sq. ft.',
-      timeline: '2 Months Spatial Modeling',
-      style: 'Monolithic Sculptural Brutalism',
-      elevationOrFloors: '3 Tiered Volumes'
-    },
-    materials: ['Pure Unfinished Concrete', 'Shadow Reveal Grooves', 'Recessed Glazing', 'Raw Basalt Blocks'],
-    workflowHighlights: [
-      'Created non-destructive component hierarchy in SketchUp.',
-      'Studied 360-degree solar shadow casting for summer and winter comfort.',
-      'Exported high-res vector line linework for architectural publication.'
-    ],
-    featured: true
-  },
-  {
-    id: 'warm-modern-interior',
-    projectCode: 'INT-2405',
-    title: 'Warm Modern Interior & Millwork',
-    subtitle: 'Bespoke floating white oak cabinetry, linear slats, and architectural cove illumination',
+    id: 'devon-residence-interior',
+    projectCode: 'INT-2404',
+    title: 'Devon Residence — Interior Suite',
+    subtitle: 'Full interior visualization package: kitchen, great room, master suite & ADU',
     category: 'interior',
     categoryLabel: 'Interior Architecture',
     year: '2024',
-    location: 'Denver, Colorado',
-    sqft: '2,400 SQ FT',
-    software: ['SketchUp Pro', 'Photoshop CC', 'Enscape'],
+    location: 'Devon Residence',
+    sqft: '2,800 SQ FT',
+    software: ['SketchUp Pro', 'Enscape 3D', 'Photoshop CC'],
     renderEngine: 'Photoshop Atmospheric Composite',
-    coverImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+    coverImage: '/images/interior/devon-kitchen-highres.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80'
+      '/images/interior/devon-kitchen-highres.jpg',
+      '/images/interior/devon-greatroom-highres.jpg',
+      '/images/interior/devon-masterbedroom-highres.jpg',
+      '/images/interior/devon-masterbath-highres.jpg',
+      '/images/interior/devon-adu-highres.jpg',
     ],
-    sketchupImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
-    description: 'Transforming an open living floorplan through architectural millwork partitions. Every cabinet reveal, hidden flush door, and LED channel was modeled to 1mm tolerance in SketchUp, then enhanced in Photoshop with warm 2700K lighting.',
-    architecturalIntent: 'Eliminating clutter through concealed built-in architecture, creating a warm, tactile sanctuary bathed in indirect illumination.',
-    toolsUsed: ['SketchUp Pro', 'Photoshop CC', 'Cabinet Vision', 'Enscape'],
+    sketchupImage: '/images/interior/devon-greatroom-highres.jpg',
+    photoshopFinalImage: '/images/interior/devon-kitchen-highres.jpg',
+    description: 'A comprehensive five-room interior visualization package for the Devon Residence — covering kitchen, great room, master bedroom, master bathroom, and ADU. Each space was modeled to millwork tolerance in SketchUp and post-produced with warm atmospheric lighting.',
+    architecturalIntent: 'To create a cohesive interior environment built around warm natural materials, integrated millwork, and carefully calibrated spatial proportions across all primary living zones.',
+    toolsUsed: ['SketchUp Pro', 'Enscape 3D', 'Adobe Photoshop CC'],
     specs: {
-      area: '2,400 sq. ft.',
-      timeline: '2.5 Months Design & Visualization',
-      style: 'Warm Minimalist Contemporary',
-      elevationOrFloors: 'Single Level Great Room'
+      area: '2,800 sq. ft.',
+      timeline: '5 Weeks Modeling & Post-Production',
+      style: 'Warm Contemporary Modern',
+      elevationOrFloors: 'Single Level with ADU'
     },
-    materials: ['Rift-Cut White Oak', 'Honed Travertine', 'Brushed Champagne Brass', 'Linen Wall Panels'],
+    materials: ['White Oak Millwork', 'Honed Stone Countertops', 'Warm Brass Hardware', 'Linen Wall Panels'],
     workflowHighlights: [
-      'Modeled 100% custom millwork shop drawings in SketchUp with hardware clearances.',
-      'Fine-tuned material grain direction and soft reflection bounce in Photoshop.',
-      'Delivered fabrication files directly to local custom cabinetmaker.'
+      'Each room modeled to 1mm millwork tolerance in SketchUp.',
+      'Warm 2700K ambient lighting atmosphere built in Photoshop post-production.',
+      'ADU modeled as separate linked component within the master SketchUp file.',
+      'Five-room package delivered for client design presentation and contractor coordination.'
     ],
     featured: true
   },
   {
-    id: 'modern-mediterranean-villa',
-    projectCode: 'ARC-2406',
-    title: 'Modern Mediterranean Coastal Estate',
-    subtitle: 'Smooth white stucco arches, reclaimed terracotta, and olive courtyard garden',
+    id: 'rose-cottage',
+    projectCode: 'ARC-2405',
+    title: 'Rose Cottage',
+    subtitle: 'Complete interior and exterior visualization — bedroom, living kitchen & facade',
+    category: 'residential',
+    categoryLabel: 'Residential Houses',
+    year: '2023',
+    location: 'Rose Cottage',
+    sqft: '1,800 SQ FT',
+    software: ['SketchUp Pro', 'V-Ray 6', 'Photoshop CC'],
+    renderEngine: 'V-Ray 6 Photorealistic',
+    coverImage: '/images/exterior/rose-cottage-exterior-highres.jpg',
+    galleryImages: [
+      '/images/exterior/rose-cottage-exterior-highres.jpg',
+      '/images/exterior/rose-cottage-exterior-clay.jpg',
+      '/images/interior/rose-cottage-living-kitchen-highres.jpg',
+      '/images/interior/rose-cottage-bedroom-highres.jpg',
+      '/images/interior/rose-cottage-bedroom-clay.jpg',
+    ],
+    sketchupImage: '/images/exterior/rose-cottage-exterior-clay.jpg',
+    photoshopFinalImage: '/images/exterior/rose-cottage-exterior-highres.jpg',
+    description: 'A full inside-out visualization project for a charming residential cottage — exterior facade with clay wireframe validation, open-plan living kitchen, and master bedroom suite. Demonstrates the complete architectural visualization workflow from raw model to photorealistic final.',
+    architecturalIntent: 'To deliver an intimate, light-filled cottage aesthetic — where the exterior character and interior warmth speak a unified architectural language of natural materials and thoughtful proportion.',
+    toolsUsed: ['SketchUp Pro', 'V-Ray 6', 'Adobe Photoshop CC'],
+    specs: {
+      area: '1,800 sq. ft.',
+      timeline: '3.5 Weeks Design & Visualization',
+      style: 'Contemporary Cottage Residential',
+      elevationOrFloors: '1–2 Stories'
+    },
+    materials: ['Smooth Render Facade', 'Timber Accents', 'Natural Stone Features', 'Large Windows'],
+    workflowHighlights: [
+      'Single master SketchUp model used for both interior and exterior camera scenes.',
+      'Clay exterior approved before final V-Ray material and lighting production.',
+      'Interior spaces modeled with accurate furniture and millwork clearances.',
+      'Cohesive material palette maintained across all interior and exterior renders.'
+    ],
+    featured: true
+  },
+  {
+    id: '3d-floor-plan-suite',
+    projectCode: 'LAY-2406',
+    title: '3D Floor Plan Suite',
+    subtitle: 'Isometric 3D floor plan visualizations for residential and mixed-use projects',
     category: 'layout',
     categoryLabel: 'Floor Plans & LayOut',
-    year: '2023',
-    location: 'Santa Barbara, California',
-    sqft: '4,100 SQ FT',
-    software: ['SketchUp Pro', 'LayOut 2D', 'Photoshop'],
+    year: '2024',
+    location: 'Various Projects',
+    sqft: 'Multiple Scales',
+    software: ['SketchUp Pro 2025', 'V-Ray 6', 'LayOut'],
     renderEngine: 'SketchUp LayOut Drawing Set',
-    coverImage: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
+    coverImage: '/images/floorplan/1st-floor-highres.png',
     galleryImages: [
-      'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'
+      '/images/floorplan/1st-floor-highres.png',
+      '/images/floorplan/2nd-floor-highres.png',
+      '/images/floorplan/darmstadt-basement-highres.png',
+      '/images/floorplan/tomaree-highres.jpg',
     ],
-    sketchupImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    photoshopFinalImage: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
-    description: 'A contemporary take on traditional Santa Barbara Spanish colonial architecture. Vincent drafted the comprehensive 28-sheet LayOut construction document set directly linked to the SketchUp master 3D model, ensuring plan-to-section consistency.',
-    architecturalIntent: 'Celebrating California indoor-outdoor living with deep shaded arcades, limestone fountains, and drought-tolerant olive and lavender gardens.',
-    toolsUsed: ['SketchUp Pro', 'SketchUp LayOut', 'Photoshop CC'],
+    sketchupImage: '/images/floorplan/darmstadt-basement-highres.png',
+    photoshopFinalImage: '/images/floorplan/1st-floor-highres.png',
+    description: 'A collection of 3D isometric floor plan visualizations across residential and specialized projects — 1st floor, 2nd floor, basement level, and a unique headland site plan. These 3D plans give buyers and clients immediate spatial clarity unavailable in traditional 2D drawings.',
+    architecturalIntent: 'To transform flat 2D floor plan documentation into engaging 3D isometric views that communicate room relationships, flow, and spatial hierarchy at a glance.',
+    toolsUsed: ['SketchUp Pro 2025', 'SketchUp LayOut', 'V-Ray 6'],
     specs: {
-      area: '4,100 sq. ft.',
-      timeline: '4.5 Months Permitting Documents',
-      style: 'Modern Mediterranean Coastal',
-      elevationOrFloors: '2 Levels with Courtyard Loggia'
+      area: 'Multiple Projects',
+      timeline: '1 – 2 Weeks per Plan Set',
+      style: 'Isometric 3D Floor Plan Visualization',
+      elevationOrFloors: 'Multi-Level Coverage'
     },
-    materials: ['Smooth Hand-Troweled Stucco', 'Reclaimed Spanish Clay Roof Tiles', 'Santa Barbara Sandstone', 'Custom Wrought Iron'],
+    materials: ['Color-Coded Rooms', 'Isometric Projection', 'Furniture Layout', 'Wall Cut Sections'],
     workflowHighlights: [
-      'Linked SketchUp 3D scenes dynamically into LayOut 2D sheets.',
-      'Generated window schedules, dimensioned wall sections, and door assemblies.',
-      'Passed Santa Barbara Historic & Architectural Board review on initial submittal.'
+      'Each level rendered as a separate isometric camera scene in SketchUp.',
+      'Color-coded room zones for immediate spatial legibility.',
+      'Furniture and fixture placement included for scale comprehension.',
+      'Basement level Darmstadt project demonstrates below-grade massing capability.'
     ],
     featured: true
   }
@@ -378,57 +393,57 @@ export const PROJECTS: Project[] = [
 
 export const COMPARISON_SCENES: ComparisonScene[] = [
   {
-    id: 'villa-solaris',
-    title: 'The Obsidian Pavilion & Courtyard',
-    location: 'Kyoto Prefecture, Japan',
-    discipline: 'Exterior & Landscape Synergy',
-    sketchupLabel: 'Trimble SketchUp (Massing & Solar Model)',
-    photoshopLabel: 'Adobe Photoshop (Atmospheric Composite)',
-    sketchupDescription: 'Precision 3D geometric massing, solar angle calibration at 35° azimuth, structural cantilever calculations, and initial terrain stepped contour grading.',
-    photoshopDescription: 'Multi-layer atmospheric grading, warm twilight interior emission, misty pine forest background matte painting, wet stone reflection detailing, and ambient occlusion passes.',
-    sketchupImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
-    photoshopImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80',
+    id: 'bozeman-clay-vs-final',
+    title: '693 Clancey — Bozeman Residence',
+    location: 'Bozeman, Montana',
+    discipline: 'Exterior Visualization Workflow',
+    sketchupLabel: 'SketchUp Clay Model',
+    photoshopLabel: 'V-Ray + Photoshop Final Render',
+    sketchupDescription: 'Clean geometric massing, accurate roof pitch, window and door placement, structural bay spacing, and site terrain integration — all validated at clay stage before texturing begins.',
+    photoshopDescription: 'Full photorealistic materialization, V-Ray sun and sky lighting, atmospheric depth, native landscaping entourage, and color-graded sky backdrop composited in Photoshop.',
+    sketchupImage: '/images/exterior/693-clancey-view1-clay.jpg',
+    photoshopImage: '/images/exterior/693-clancey-view1-highres.jpg',
     techNotes: [
-      'SketchUp: Sandbox tool for natural sloped topography',
-      'SketchUp: Dynamic component louvers with shadow cast',
-      'Photoshop: Camera Raw filter for moody blue-green grading',
-      'Photoshop: 42 layered lighting and depth-of-field passes'
+      'SketchUp: Massing validated against zoning setbacks and height limits',
+      'SketchUp: Accurate window-to-wall ratio calibration',
+      'Photoshop: Atmospheric mountain backdrop matte painting',
+      'Photoshop: Native Montana vegetation entourage composited'
     ]
   },
   {
-    id: 'nordic-residence',
-    title: 'Aethelgard Biophilic Atrium & Lounge',
-    location: 'Oslo Fjord, Norway',
-    discipline: 'Interior & Landscape Living',
-    sketchupLabel: 'Trimble SketchUp (Millwork & Interior Volumetrics)',
-    photoshopLabel: 'Adobe Photoshop (Materiality & Natural Illumination)',
-    sketchupDescription: 'Millwork tolerance modeling, custom sunken conversation pit coordinates, double-height glazing frames, and structural timber beam integration.',
-    photoshopDescription: 'Bespoke walnut grain texture enhancement, volumetric morning mist drifting through clerestory windows, warm 2700K ambient light bounce, and lush indoor botanical grading.',
-    sketchupImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80',
-    photoshopImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80',
+    id: 'crescent-blvd-exterior',
+    title: 'Crescent Blvd — Exterior Residence',
+    location: 'Crescent Boulevard',
+    discipline: 'Exterior & Facade Visualization',
+    sketchupLabel: 'SketchUp Clay Model',
+    photoshopLabel: 'V-Ray + Photoshop Final Render',
+    sketchupDescription: 'Structural massing geometry, facade articulation, window placement validation, roof overhangs, and driveway approach modeled in clean clay for client review.',
+    photoshopDescription: 'V-Ray material textures applied, warm afternoon sun lighting calibrated, sky replacement, driveway hardscape and softscape landscaping composited in final production.',
+    sketchupImage: '/images/exterior/crescent-blvd-exterior-clay.jpg',
+    photoshopImage: '/images/exterior/crescent-blvd-exterior-highres.jpg',
     techNotes: [
-      'SketchUp: Parametric custom cabinetry & ceiling slats',
-      'SketchUp: Accurate furniture clearance and sightlines',
-      'Photoshop: High-pass sharpening on brushed bronze accents',
-      'Photoshop: Soft natural glow falloff from floor-to-ceiling glass'
+      'SketchUp: Facade articulation and shadow depth validated at clay stage',
+      'SketchUp: Driveway approach grade modeled from site survey',
+      'Photoshop: Warm golden hour lighting atmosphere composited',
+      'Photoshop: Foreground softscape and mature tree canopy added'
     ]
   },
   {
-    id: 'serenity-gardens',
-    title: 'Komorebi Cascading Zen Landscape',
-    location: 'Vancouver Island, BC',
-    discipline: 'Landscape & Garden Architecture',
-    sketchupLabel: 'Trimble SketchUp (Grading, Hardscape & Water Levels)',
-    photoshopLabel: 'Adobe Photoshop (Foliage Density & Water Caustics)',
-    sketchupDescription: 'Contour line triangulation, granite retaining wall steps, reflecting pond basin geometry, and stone pathway placement.',
-    photoshopDescription: 'Photorealistic Japanese maple canopy overlay, submerged moss bank textures, twilight stone lantern bloom, and mirrored water surface reflections with ripples.',
-    sketchupImage: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1600&q=80',
-    photoshopImage: 'https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=1600&q=80',
+    id: 'rose-cottage-interior',
+    title: 'Rose Cottage — Interior Living Kitchen',
+    location: 'Rose Cottage',
+    discipline: 'Interior Architecture Visualization',
+    sketchupLabel: 'SketchUp Clay Interior',
+    photoshopLabel: 'V-Ray + Photoshop Final Interior',
+    sketchupDescription: 'Millwork cabinet geometry, island proportions, ceiling height, window placement, and furniture layout validated in clay — ensuring spatial accuracy before material application.',
+    photoshopDescription: 'Warm 2700K ambient light, natural material textures on cabinetry and counters, window light bloom, and lifestyle entourage composited for a photorealistic interior atmosphere.',
+    sketchupImage: '/images/interior/rose-cottage-living-kitchen-clay.jpg',
+    photoshopImage: '/images/interior/rose-cottage-living-kitchen-highres.jpg',
     techNotes: [
-      'SketchUp: Accurate spot elevation tagging and drainage slope',
-      'SketchUp: Custom cut-and-fill retaining geometry',
-      'Photoshop: Custom botanical brush stamp engine for endemic foliage',
-      'Photoshop: Deep blue-green moody oceanic atmospheric depth'
+      'SketchUp: Cabinet millwork modeled to 1mm tolerance',
+      'SketchUp: Furniture clearances and traffic flow validated in plan',
+      'Photoshop: Warm interior light bounce calibrated through window glazing',
+      'Photoshop: Counter material grain and cabinet reflection tuned per surface'
     ]
   }
 ];
@@ -495,7 +510,7 @@ export const SERVICES: ServiceItem[] = [
       'Direct dynamic link to 3D SketchUp model for real-time updates'
     ],
     tools: ['SketchUp LayOut', 'Vector Hybrid Render', 'AutoCAD Export'],
-    highlight: 'Zero discrepancy between your 3D model and the contractor’s printed plans.',
+    highlight: "Zero discrepancy between your 3D model and the contractor's printed plans.",
     estTimeline: '3 – 6 Weeks'
   }
 ];
@@ -503,11 +518,11 @@ export const SERVICES: ServiceItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
-    quote: "Vincent's dual mastery of SketchUp precision and photorealistic lighting won our client over instantly. The way he engineered the cantilever roof overhangs and captured the sunset glow in Malibu was pure artistry.",
+    quote: "Vincent's dual mastery of SketchUp precision and photorealistic lighting won our client over instantly. The clay model reviews kept us aligned at every stage before the final renders — a workflow that saved us weeks of revision.",
     author: 'Marcus Vance',
     role: 'Principal Architect',
     company: 'Vance & Holbrook Architects',
-    project: 'The Ridge Cantilever Residence',
+    project: 'Pacific Heights Residence',
     rating: 5
   },
   {
@@ -516,16 +531,16 @@ export const TESTIMONIALS: Testimonial[] = [
     author: 'Elena Rostova',
     role: 'Lead Interior Designer',
     company: 'Studio Rostova Milan',
-    project: 'Cascade Timber Villa',
+    project: 'Devon Residence Interior Suite',
     rating: 5
   },
   {
     id: 'test-3',
-    quote: "Our city review board demanded rigorous solar shadow studies and 2D LayOut plans before approving our modern infill home. Vincent delivered both within two weeks, and we received permitting on the very first submittal.",
+    quote: "Our city review board demanded rigorous floor plan documentation and elevations before approving our project. Vincent delivered a complete 3D floor plan suite within two weeks, and we received approval on the very first submittal.",
     author: 'Julian Chen',
     role: 'Residential Developer',
     company: 'Apex Urban Living',
-    project: 'Metropolitan Infill Courtyard',
+    project: 'Groove Streets Apartments',
     rating: 5
   }
 ];

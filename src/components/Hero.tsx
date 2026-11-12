@@ -206,18 +206,12 @@ export const Hero: React.FC<HeroProps> = ({
                 <img
                   src={
                     viewMode === 'render'
-                      ? 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'
-                      : 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
+                      ? '/images/exterior/pacific-heights-front-highres.jpg'
+                      : '/images/exterior/pacific-heights-front-clay.jpg'
                   }
-                  alt="The Ridge Cantilever Residence"
-                  onError={(e) => {
-                    // Graceful fallback if offline or user replaces photo
-                    const target = e.currentTarget;
-                    target.onerror = null;
-                    target.src = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80';
-                  }}
+                  alt="Pacific Heights Residence"
                   className={`w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-103 ${
-                    viewMode === 'clay' ? 'contrast-115 grayscale brightness-95' : 'brightness-105'
+                    viewMode === 'clay' ? 'contrast-115 brightness-95' : 'brightness-105'
                   }`}
                 />
 
@@ -253,10 +247,10 @@ export const Hero: React.FC<HeroProps> = ({
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide">
-                        The Ridge Cantilever Residence
+                        Pacific Heights Residence
                       </h3>
                       <p className="text-xs font-mono text-teal-300/90 mt-0.5">
-                        Malibu, CA • 4,800 sq ft Custom Residential Architecture
+                        Pacific Heights • Contemporary Residential Architecture
                       </p>
                     </div>
 
@@ -282,7 +276,7 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
 
                 <button
-                  onClick={() => onOpenContact('The Ridge Cantilever Residence (Malibu Style)')}
+                  onClick={() => onOpenContact('Pacific Heights Residence (Contemporary Style)')}
                   className="w-full sm:w-auto px-4 py-2 rounded-lg bg-teal-500/25 hover:bg-teal-500/35 border border-teal-400/50 text-teal-200 hover:text-white text-xs font-mono transition-all flex items-center justify-center gap-1.5 cursor-pointer flex-shrink-0"
                 >
                   <span>Quote This Style</span>

@@ -69,7 +69,7 @@ export const StudioSimulator: React.FC<StudioSimulatorProps> = ({ onBookSession 
       label: 'Perspective',
       lens: '24mm Wide-Angle',
       desc: 'Human Eye-Level 3D Courtyard Perspective',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80',
+      image: '/images/exterior/pacific-heights-front-highres.jpg',
       tiltClass: 'rotate-x-0 rotate-y-0 scale-100'
     },
     {
@@ -77,7 +77,7 @@ export const StudioSimulator: React.FC<StudioSimulatorProps> = ({ onBookSession 
       label: 'Front',
       lens: 'Orthographic 50mm',
       desc: 'True Front Architectural Elevation Facade',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80',
+      image: '/images/exterior/693-clancey-view1-highres.jpg',
       tiltClass: 'scale-105'
     },
     {
@@ -85,7 +85,7 @@ export const StudioSimulator: React.FC<StudioSimulatorProps> = ({ onBookSession 
       label: 'Isometric',
       lens: 'Parallel Axonometric 30°',
       desc: '3D Volumetric Structural Massing View',
-      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80',
+      image: '/images/floorplan/tomaree-highres.jpg',
       tiltClass: 'scale-95 -rotate-1'
     },
     {
@@ -93,7 +93,7 @@ export const StudioSimulator: React.FC<StudioSimulatorProps> = ({ onBookSession 
       label: 'Top',
       lens: 'Aerial Plan 90° Nadir',
       desc: "True Bird's-Eye Site Plan & Rooflines",
-      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80',
+      image: '/images/floorplan/1st-floor-highres.png',
       tiltClass: 'scale-100'
     }
   ];

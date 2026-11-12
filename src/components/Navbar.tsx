@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Box, 
-  Menu, 
-  X, 
-  SlidersHorizontal, 
-  Sparkles, 
-  Phone, 
-  Cuboid,
-  Layers, 
-  Calculator,
+import {
+  Menu,
+  X,
+  Phone,
   Compass,
-  Building
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -68,16 +61,12 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => onScrollTo('hero')}
           className="group flex items-center gap-3 text-left focus:outline-none cursor-pointer"
         >
-          <div className="w-9 h-9 rounded-md bg-[#07222c] border border-teal-500/40 flex items-center justify-center text-teal-300 group-hover:border-teal-400 group-hover:shadow-[0_0_15px_rgba(45,212,191,0.3)] transition-all">
-            <Cuboid className="w-5 h-5 text-teal-300 group-hover:rotate-12 transition-transform duration-300" />
-          </div>
-          <div>
-            <div className="font-serif tracking-wide text-lg sm:text-xl font-bold text-white group-hover:text-teal-300 transition-colors">
-              VINCENT JIMENEZ
-            </div>
-            <p className="text-[9px] sm:text-[10px] text-teal-400/90 font-mono tracking-widest uppercase -mt-0.5">
-              ARCHITECTURAL & SKETCHUP DESIGN
-            </p>
+          <div className="bg-white/95 rounded-md px-2 py-1 group-hover:bg-white transition-colors shadow-sm">
+            <img
+              src="/images/logo.png"
+              alt="VJD Architectural & 3D Render"
+              className="h-9 w-auto object-contain"
+            />
           </div>
         </button>
 
